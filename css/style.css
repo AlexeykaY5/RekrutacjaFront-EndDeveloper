@@ -196,8 +196,9 @@ header{
 }
 
 .oferta_title>p{
-    font-weight: 500;
+    font-family: "Inter";
     font-style: italic;
+    font-weight: 500;
     font-size: 48px;
 }
 
@@ -249,31 +250,161 @@ header{
 
 .aboutus{
     width: 100%;
-    display: flex;   
+    display: flex; 
+    background-color: #1B5B31;  
 }
 
 .aboutus_image{
     width: 45%;
     background-image: url(../img/Photo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .aboutus_info{
     width: 55%;
     padding: 135px 90px 135px 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .aboutus_subtitle{
     font-size: 12px;
+    color: #F5F0EC;
+    margin-bottom: 16px;
 }
 
 .aboutus_title{
-    
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 115%;
+    margin-bottom: 40px;
+    color: #F5F0EC;
 }
 
 .aboutus_title>i{
+    font-family: "Inter";
     font-style: italic;
+    color: #F5F0EC;
 }
 
 .aboutus_desc{
+    font-size: 16px;
+    margin-bottom: 72px;
+    color: #F5F0EC;
+}
 
+.aboutus_btn{
+    padding: 14px 24px;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-right: 36px;
+}
+
+.aboutus_btn:hover{
+    color: #1B5B31;
+    background-color: #fff;
+}
+
+/* Realizacje */
+
+.realizacje{
+    background-color: #DCC1AB;
+    padding-top: 120px;
+}
+
+.realizacje_text{
+    margin: 0 0 96px 160px;
+}
+
+.realizacje_text>p{
+    font-size: 12px;
+    color: #1B5B31;
+    margin-bottom: 16px;
+}
+
+.realizacje_title{
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 115%;
+}
+
+.realizacje_title>i{
+    font-family: "Inter";
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.inst{
+    padding: 60px 200px;
+    background-color: #F5F0EC;
+}
+
+.inst_block{
+    background-color: #1B5B31;
+    padding: 120px 110px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.inst_title{
+    font-family: "Montserrat";
+    font-size: 40px;
+    color: #F5F0EC;
+}
+
+.inst_title>i{
+    font-family: "Inter";
+    font-style: italic;
+    color: #F5F0EC;
+}
+
+.inst_subtitle{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.inst_subtitle>p{
+    color: #F5F0EC;
+}
+
+.inst_subtitle>a{
+    background-color: #F5F0EC;
+    text-decoration: none;
+    padding: 10px 24px;
+    border-radius: 50px;
+    border: 1px solid #1B5B31;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1B5B31;
+}
+
+.inst_subtitle>a:hover{
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: #1B5B31;
 }
