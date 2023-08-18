@@ -1,5 +1,8 @@
 *{
     font-family: "Inter";
+}
+
+body{
     color: #111;
 }
 
@@ -407,4 +410,46 @@ header{
     color: #fff;
     border: 1px solid #fff;
     background-color: #1B5B31;
+}
+
+
+.footer{
+    padding: 80px 200px;
+    background-color: #111;
+    color: #F5F0EC;
+}
+
+.footer_block-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_subtitle{
+    display: flex;
+    align-items: center;
+}
+
+.footer_subtitle>p{
+    margin: 0;
+    font-size: 16px;
+}
+
+.footer_btn{
+    padding: 14px 24px;
+    font-size: 16px;
+    border: 0;
+    border-radius: 50px;
+    border: 1px solid #1B5B31;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1B5B31;
+    margin-left: 24px;
+}
+
+.footer_btn:hover{
+    border: 1px solid #F5F0EC;
+    color: #F5F0EC;
+    background-color: #111;
 }
