@@ -45,22 +45,38 @@ header{
     align-items: center;
 }
 
-.d-flex>input{
+.nav_input{
     display: none;
+    border: 1px solid #111111;
+    border-radius: 8px;
+    padding-left: 5px;
+}
+
+.nav_input.active{
+    display: block;
+}
+
+.btn-outline-success {
+    --bs-btn-active-bg: #19875400;
+}
+
+.btn:hover {
+    color: #111;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+[type=search] {
+    outline-offset: 0px; 
 }
 
 .search{
     width: 20px;
     height: 20px;
     border: 0;
-    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.search:hover{
-    background-color: #fff;
 }
 
 
@@ -103,14 +119,17 @@ header{
     justify-content: center;
     color: #1B5B31;
     margin-right: 36px;
+    transition: 0.15s ease-in-out;
 }
 
 .btn_kontakt:hover{
     background-color: #1B5B31;
     color: #F5F0EC;
+    transition: 0.15s ease-in-out;
 }
 
 .btn_realizacje{
+    text-decoration: none;
     padding: 14px 24px;
     border-radius: 50px;
     border: 1px solid #1B5B31;
@@ -119,24 +138,35 @@ header{
     justify-content: center;
     color: #1B5B31;
     margin-right: 36px;
+    transition: 0.15s ease-in-out;
 }
 
 .btn_realizacje:hover{
     background-color: #1B5B31;
     color: #F5F0EC;
+    transition: 0.15s ease-in-out;
 }
 
-.carousel{
-    width: 43%;
+.carousel-item{
+    display: flex;
 }
 
-.carousel-item>img {
+.carousel-item.active{
+    display: flex; 
+}
+
+.main_block-image{
+    width: 47%;
+    display: flex;
+}
+
+.main_block-image>img {
     height: 800px;
     max-height: 800px;
 }
 
 .carousel__control-prev{
-    left: 76%;
+    right: 90px;
 }
 
 .carousel__control-next{
@@ -149,20 +179,18 @@ header{
     bottom: 0px;
     height: 100px;
     background-color: #F5F0EC;
-    width: 12%;
+    width: 90px;
     padding: 0;
     text-align: center;
     opacity: 1;
     border: 0;
-    /* transition: opacity .15s ease; */
+    transition: 0.5s;
+    transition: opacity 0.5s ease;
 }
 
-.carousel__control-next:hover, .carousel__control-prev:hover,
-.carousel__control-next:focus, .carousel__control-prev:focus,
-.carousel__control-next:active, .carousel__control-prev:active {
-    background-color: #F5F0EC;
+.carousel__control-next:hover, .carousel__control-prev:hover{
     opacity: 0.9;
-    /* transition: opacity .15s ease; */
+    transition: opacity 0.5s ease;
 }
 
 .carousel__control-next>img{
@@ -219,17 +247,54 @@ header{
 }
 
 .card{
+    display: flex;
+    align-items: flex-start;
     width: 25%;
     padding: 50px 28px;
     background-color: #fff;
     color: #111;
+    text-decoration: none;
     border: 0;
     border-radius: 28px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
 }
-/* 
-.card:nth-child(2){
-    margin: 0 64px;
-} */
+
+.card:hover{
+    background-color: #fff;
+    color: #111111;
+    transform: scale(1.03);
+    -webkit-box-shadow: 0px 0px 73px -16px rgba(16, 11, 9, 0.39);
+    -moz-box-shadow: 0px 0px 73px -16px rgba(16, 11, 9, 0.39);
+    box-shadow: 0px 0px 73px -16px rgba(16, 11, 9, 0.39);
+    transition: 0.5s ease-in-out;
+}
+
+.btn-check:checked+.btn, 
+.btn.active, .btn.show, 
+.btn:first-child:active, 
+:not(.btn-check)+.btn:active {
+    background-color: #fff;
+    color: #111111;
+}
+
+.btn-check:checked+.btn:focus-visible, 
+.btn.active:focus-visible, 
+.btn.show:focus-visible, 
+.btn:first-child:active:focus-visible, 
+:not(.btn-check)+.btn:active:focus-visible {
+    -webkit-box-shadow: 0px 0px 73px -16px rgba(16, 11, 9, 0.39);
+    -moz-box-shadow: 0px 0px 73px -16px rgba(16, 11, 9, 0.39);
+    box-shadow: 0px 0px 73px -16px rgba(16, 11, 9, 0.39);
+}
+
+.btn:focus-visible {
+    background-color: #fff;
+    color: #111111;
+    border-color: none;
+    outline: 0;
+    box-shadow: 0px 0px 73px -16px rgba(16, 11, 9, 0.39);
+}
 
 .card>img{
     width: 44px;
@@ -247,6 +312,20 @@ header{
 .card>p{
     font-size: 14px;
     margin-bottom: 63px;
+}
+
+.card_btn{
+    color: #1B5B31;
+}
+
+.card_btn-text{
+    margin-bottom: 4px;
+}
+
+.card_btn-underline{
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid #1B5B31;
 }
 
 /* aboutus */
@@ -308,12 +387,14 @@ header{
     align-items: center;
     justify-content: center;
     color: #fff;
-    margin-right: 36px;
+    margin-right: 36px;    
+    transition: 0.15s ease-in-out;
 }
 
 .aboutus_btn:hover{
     color: #1B5B31;
     background-color: #fff;
+    transition: 0.15s ease-in-out;
 }
 
 /* Realizacje */
@@ -347,12 +428,18 @@ header{
 
 .grid__block{
     width: 100%;
-    /* height: auto; */
     height: 1519px;
     margin: auto;
     position: relative;
     padding-bottom: 90px;
     overflow: hidden;
+    transition: 0.5s ease;
+}
+
+.grid__block.active{
+    height: auto;
+    transition: 0.5s ease;
+    padding-bottom: 30px;
 }
 
 .grid{
@@ -383,17 +470,28 @@ header{
     padding-bottom: 90px;
 }
 
+.open_grid.active{
+    height: auto;
+    padding-bottom: 30px;
+}
+
 .open_grid-btn{
     background-color: none;
     padding: 13px 22px;
     border-radius: 50px;
     color: #111111;
     border: 1px solid #111111;
+    transition: 0.15s ease-in-out;
 }
 
-.open_grid-btn>img{
-    margin-left: 8px;
+
+.open_grid-btn:hover{
+    background-color: #111111;
+    color: #F5F0EC;
+    transition: 0.15s ease-in-out;
 }
+
+/* inst */
 
 .inst{
     padding: 60px 200px;
@@ -439,15 +537,19 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #1B5B31;
+    color: #1B5B31;    
+    transition: 0.15s ease-in-out;
 }
 
 .inst_subtitle>a:hover{
     color: #fff;
     border: 1px solid #fff;
-    background-color: #1B5B31;
+    background-color: #1B5B31;    
+    transition: 0.15s ease-in-out;
 }
 
+
+/* footer */
 
 .footer{
     padding: 80px 200px;
@@ -487,12 +589,14 @@ header{
     justify-content: center;
     background-color: #1B5B31;
     margin-left: 24px;
+    transition: 0.15s ease-in-out;
 }
 
 .footer_btn:hover{
     border: 1px solid #F5F0EC;
     color: #F5F0EC;
     background-color: #111;
+    transition: 0.15s ease-in-out;
 }
 
 .footer_stick{

@@ -43,8 +43,8 @@
                   </li>
                 </ul>
                 <form class="d-flex" role="search">
-                  <input class="w me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="search btn btn-outline-success" type="submit"><img src="./img/search.svg" alt=""></button>
+                  <input class="nav_input w me-2" id="nav_input" type="search" placeholder="Search" aria-label="Search">
+                  <button class="search btn btn-outline-success" type="submit" id="search_btn"><img src="./img/search.svg" alt=""></button>
                 </form>
               </div>
             </div>
@@ -54,40 +54,63 @@
 
 
     <section class="main">
-      <div class="main_block">
-        <div class="block_inf">
-          <h2>
-            Nowoczesna</br>
-            aranżacja</br>
-            Twojego ogrodu 
-          </h2>
-          <p>
-            Marka GiardDesign to wieloletnie doświadczenie i wysoka</br>
-            estetyka realizacji. Oferujemy kompleksowy zakres usług</br> 
-            z indywidualnym podejściem do każdego projektu.
-          </p>
-        </div>
-        <div class="block_btn">
-          <div class="btn_kontakt">
-              Skontaktuj się z nami
-          </div>
-          <div class="btn_realizacje">
-              Zobacz nasze realizacje
-              <img src="./img/button-arrow.svg" alt="">
-          </div>
-        </div>
-      </div>
-
       <div id="carouselExampleFade" class="carousel slide carousel-fade">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./img/main.jpg" class="d-block w-100" alt="...">
+            <div class="main_block ">
+              <div class="block_inf">
+                <h2>
+                  Nowoczesna</br>
+                  aranżacja</br>
+                  Twojego ogrodu 
+                </h2>
+                <p>
+                  Marka GiardDesign to wieloletnie doświadczenie i wysoka</br>
+                  estetyka realizacji. Oferujemy kompleksowy zakres usług</br> 
+                  z indywidualnym podejściem do każdego projektu.
+                </p>
+              </div>
+              <div class="block_btn">
+                <div class="btn_kontakt">
+                    Skontaktuj się z nami
+                </div>
+                <a href="#!" class="btn_realizacje">
+                    Zobacz nasze realizacje
+                    &darr;
+                </a>
+              </div>
+            </div>
+            <div class="main_block-image">
+              <img src="./img/main.jpg" class="d-block w-100" alt="...">
+            </div>
           </div>
           <div class="carousel-item">
-            <img src="./img/photo_2023-07-12_18-37-57.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="./img/main.jpg" class="d-block w-100" alt="...">
+            <div class="main_block">
+              <div class="block_inf">
+                <h2>
+                  Z przyjemnością</br>
+                  odpowiemy</br>
+                  na Twoje pytanie 
+                </h2>
+                <p>
+                  Marka GiardDesign to wieloletnie doświadczenie i wysoka</br>
+                  estetyka realizacji. Oferujemy kompleksowy zakres usług</br> 
+                  z indywidualnym podejściem do każdego projektu.
+                </p>
+              </div>
+              <div class="block_btn">
+                <div class="btn_kontakt">
+                    Skontaktuj się z nami
+                </div>
+                <div class="btn_realizacje">
+                    Zobacz nasze realizacje
+                    <img src="./img/button-arrow.svg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="main_block-image">
+              <img src="./img/Photo.jpg" class="d-block w-100" alt="...">
+            </div>
           </div>
         </div>
         <button class="carousel__control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -120,38 +143,60 @@
       </div>
 
       <div class="block_card">
-        <div class="card">
+        <button type="button" class="card btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
           <img src="./img/oferta/pen.svg" alt="">
           <h4>Projekty</h4>
           <p>Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.</p>
-          <a href="">
-            <div>
-              Dowiedz się więcej
-              <img src="" alt="">
+          <div class="card_btn">
+            <div class="card_btn-text">
+              Zobacz nasze realizacje &rarr;
             </div>
-          </a>
-        </div>
-        <div class="card">
+            <div class="card_btn-underline"></div>
+          </div>
+        </button>
+        <button type="button" class="card btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
           <img src="./img/oferta/eye.svg" alt="">
           <h4>Wizualizacje</h4>
           <p>Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D.</p>
-          <a href="">
-            <div>
-              Dowiedz się więcej
-              <img src="" alt="">
+          <div class="card_btn">
+            <div class="card_btn-text">
+              Zobacz nasze realizacje &rarr;
             </div>
-          </a>
-        </div>
-        <div class="card">
+            <div class="card_btn-underline"></div>
+          </div>
+        </button>
+        <button type="button" class="card btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
           <img src="./img/oferta/stars.svg" alt="">
           <h4>Realizacje</h4>
           <p>Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.</p>
-          <a href="">
-            <div>
-              Zobacz nasze realizacje
-              <img src="" alt="">
+          <div class="card_btn">
+            <div class="card_btn-text">
+              Zobacz nasze realizacje &rarr;
             </div>
-          </a>
+            <div class="card_btn-underline"></div>
+          </div>
+        </button>
+      </div>
+
+
+
+
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -171,7 +216,7 @@
           dostosowane do współczesnego trybu życia.
         </p>
         <div class="aboutus_btn">
-          Poznaj nas bliżej
+          Poznaj nas bliżej &rarr;
         </div>
       </div>
     </section>
@@ -185,7 +230,7 @@
           Nasze&nbsp;<i>projekty</i>
         </div>
       </div>
-      <div class="grid__block">
+      <div class="grid__block" id="grid__block">
         <div class="grid" id="masonry-container">
           <div class="grid_item">
             <img class="grid_item-image" src="./img/grid_realizacje/1_grid.jpg" alt="">
@@ -248,11 +293,11 @@
             <img class="grid_item-image" src="./img/grid_realizacje/2_grid.jpg" alt="">
           </div>
         </div>   
-        <div class="open_grid">
-          <div class="open_grid-btn">
+        <div class="open_grid" id="open_grid">
+          <span class="open_grid-btn" id="rozwin_btn">
             Rozwiń
-            <img src="./img/arrow-black-bottom.svg" alt="arrow black bottom">
-          </div>
+            &darr;
+          </span>
         </div>   
       </div>
     </section>
@@ -312,8 +357,8 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    <script src="unpkg.com/react-dom@16.7.0/umd/react-dom.production.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+    <script src="./node_modules/masonry-layout/dist/masonry.pkgd.min.js"></script>
+    <script src="./js/masonry.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
