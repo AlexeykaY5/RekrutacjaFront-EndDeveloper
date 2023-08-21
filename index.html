@@ -6,6 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
     <title>giarddesign</title>
 </head>
 <body>
@@ -31,18 +32,18 @@
                   </li>
 
                   <li class="nav-item">
-                    <a class="nav-link" href="!#">O firmie</a>
+                    <a class="nav-link" href="#oferta">O firmie</a>
                   </li>
 
                   <li class="nav-item">
-                    <a class="nav-link" href="!#">Realizacje</a>
+                    <a class="nav-link" href="#realizacje">Realizacje</a>
                   </li>
                   
                   <li class="nav-item">
-                    <a class="nav-link" href="!#">Kontakt</a>
+                    <a class="nav-link" href="#footer">Kontakt</a>
                   </li>
                 </ul>
-                <form class="d-flex" role="search">
+                <form class="nav_search-block d-flex" role="search">
                   <input class="nav_input w me-2" id="nav_input" type="search" placeholder="Search" aria-label="Search">
                   <button class="search btn btn-outline-success" type="submit" id="search_btn"><img src="./img/search.svg" alt=""></button>
                 </form>
@@ -74,9 +75,9 @@
                 <div class="btn_kontakt">
                     Skontaktuj się z nami
                 </div>
-                <a href="#!" class="btn_realizacje">
+                <a href="#realizacje" class="btn_realizacje">
                     Zobacz nasze realizacje
-                    &darr;
+                    &darr;  
                 </a>
               </div>
             </div>
@@ -102,10 +103,10 @@
                 <div class="btn_kontakt">
                     Skontaktuj się z nami
                 </div>
-                <div class="btn_realizacje">
+                <a href="#realizacje" class="btn_realizacje">
                     Zobacz nasze realizacje
-                    <img src="./img/button-arrow.svg" alt="">
-                </div>
+                    &darr;
+                </a>
               </div>
             </div>
             <div class="main_block-image">
@@ -126,7 +127,7 @@
 
 
 
-    <section class="oferta">
+    <section class="oferta" id="oferta">
       <div class="oferta_text">
         <p class="oferta_subtitle">
           Oferta
@@ -223,7 +224,7 @@
 
 
 
-    <section class="realizacje">
+    <section class="realizacje" id="realizacje">
       <div class="realizacje_text">
         <p>Realizacje</p>
         <div class="realizacje_title">
@@ -232,65 +233,276 @@
       </div>
       <div class="grid__block" id="grid__block">
         <div class="grid" id="masonry-container">
-          <div class="grid_item">
+          <div class="grid_item" id="modal_image">
             <img class="grid_item-image" src="./img/grid_realizacje/1_grid.jpg" alt="">
+            <p class="image_text" id="image_text">
+              Nowoczesne urządzenie ogrodu: połączenie komfortu z naturą 
+              Nowoczesne urządzenie ogrodu to umiejętne połączenie wygody i 
+              harmonii z naturą. Współczesni projektanci ogrodów proponują oryginalne 
+              rozwiązania, które tworzą przytulne kąty na działce. Od wielofunkcyjnych 
+              kompleksów meblowych po automatyczne systemy nawadniania i oświetlenia - 
+              nowoczesny ogród staje się miejscem, gdzie można się zrelaksować, pracować i 
+              cieszyć się otaczającą przyrodą.
+            </p>
           </div>
-          <div class="grid_item">
+          <div class="grid_item" id="modal_image">
             <img class="grid_item-image" src="./img/grid_realizacje/2_grid.jpg" alt="">
+            <p class="image_text" id="image_text">
+              Ekologiczne i świadome urządzenie nowoczesnego ogrodu
+              Nowoczesne urządzenie ogrodu to nie tylko styl i komfort, 
+              ale także ekologiczna świadomość. Wielu ogrodników wybiera 
+              trwałe materiały do pokrycia ścieżek i tarasów, stosuje metody 
+              naturalnego nawadniania oraz uprawia rodzime rośliny, które wspierają 
+              zachowanie bioróżnorodności. Taki ogród nie tylko cieszy oko, ale także 
+              wnosi swój wkład w ochronę środowiska.
+            </p>
           </div>
-          <div class="grid_item">
+          <div class="grid_item" id="modal_image">
             <img class="grid_item-image" src="./img/grid_realizacje/3_grid.jpg" alt="">
+            <p class="image_text" id="image_text">
+              Technologie w ogrodzie: automatyzacja i wygoda 
+              Nowoczesne urządzenie ogrodu nie jest możliwe 
+              bez zastosowania najnowszych technologii. Automatyczne 
+              systemy nawadniania, inteligentne czujniki wilgotności, 
+              systemy kontroli oświetlenia - to wszystko sprawia, że opieka 
+              nad ogrodem staje się bardziej wygodna i efektywna. Za pomocą 
+              aplikacji mobilnych ogrodnicy mogą monitorować i zarządzać stanem 
+              swojego ogrodu nawet na odległość.
+            </p>
           </div>
-          <div class="grid_item">
+          <div class="grid_item" id="modal_image">
             <img class="grid_item-image" src="./img/grid_realizacje/4_grid.jpg" alt="">
+            <p class="image_text" id="image_text">
+              Technologie w ogrodzie: automatyzacja i wygoda 
+              Nowoczesne urządzenie ogrodu nie jest możliwe 
+              bez zastosowania najnowszych technologii. Automatyczne 
+              systemy nawadniania, inteligentne czujniki wilgotności, 
+              systemy kontroli oświetlenia - to wszystko sprawia, że opieka 
+              nad ogrodem staje się bardziej wygodna i efektywna. Za pomocą 
+              aplikacji mobilnych ogrodnicy mogą monitorować i zarządzać stanem 
+              swojego ogrodu nawet na odległość.
+            </p>
           </div>
-          <div class="grid_item">
+          <div class="grid_item" id="modal_image">
             <img class="grid_item-image" src="./img/grid_realizacje/5_grid.jpg" alt="">
+            <p class="image_text" id="image_text">
+              Technologie w ogrodzie: automatyzacja i wygoda 
+              Nowoczesne urządzenie ogrodu nie jest możliwe 
+              bez zastosowania najnowszych technologii. Automatyczne 
+              systemy nawadniania, inteligentne czujniki wilgotności, 
+              systemy kontroli oświetlenia - to wszystko sprawia, że opieka 
+              nad ogrodem staje się bardziej wygodna i efektywna. Za pomocą 
+              aplikacji mobilnych ogrodnicy mogą monitorować i zarządzać stanem 
+              swojego ogrodu nawet na odległość.
+            </p>
           </div>
-          <div class="grid_item">
+          <div class="grid_item" id="modal_image">
             <img class="grid_item-image" src="./img/grid_realizacje/6_grid.jpg" alt="">
+            <p class="image_text" id="image_text">
+              Technologie w ogrodzie: automatyzacja i wygoda 
+              Nowoczesne urządzenie ogrodu nie jest możliwe 
+              bez zastosowania najnowszych technologii. Automatyczne 
+              systemy nawadniania, inteligentne czujniki wilgotności, 
+              systemy kontroli oświetlenia - to wszystko sprawia, że opieka 
+              nad ogrodem staje się bardziej wygodna i efektywna. Za pomocą 
+              aplikacji mobilnych ogrodnicy mogą monitorować i zarządzać stanem 
+              swojego ogrodu nawet na odległość.
+            </p>
           </div>
-          <div class="grid_item">
+          <div class="grid_item" id="modal_image">
             <img class="grid_item-image" src="./img/grid_realizacje/7_grid.jpg" alt="">
+            <p class="image_text" id="image_text">
+              Technologie w ogrodzie: automatyzacja i wygoda 
+              Nowoczesne urządzenie ogrodu nie jest możliwe 
+              bez zastosowania najnowszych technologii. Automatyczne 
+              systemy nawadniania, inteligentne czujniki wilgotności, 
+              systemy kontroli oświetlenia - to wszystko sprawia, że opieka 
+              nad ogrodem staje się bardziej wygodna i efektywna. Za pomocą 
+              aplikacji mobilnych ogrodnicy mogą monitorować i zarządzać stanem 
+              swojego ogrodu nawet na odległość.
+            </p>
           </div>
-          <div class="grid_item">
+          <div class="grid_item" id="modal_image">
             <img class="grid_item-image" src="./img/grid_realizacje/8_grid.jpg" alt="">
+            <p class="image_text" id="image_text">
+              Technologie w ogrodzie: automatyzacja i wygoda 
+              Nowoczesne urządzenie ogrodu nie jest możliwe 
+              bez zastosowania najnowszych technologii. Automatyczne 
+              systemy nawadniania, inteligentne czujniki wilgotności, 
+              systemy kontroli oświetlenia - to wszystko sprawia, że opieka 
+              nad ogrodem staje się bardziej wygodna i efektywna. Za pomocą 
+              aplikacji mobilnych ogrodnicy mogą monitorować i zarządzać stanem 
+              swojego ogrodu nawet na odległość.
+            </p>
           </div>
-          <div class="grid_item">
+          <div class="grid_item" id="modal_image">
             <img class="grid_item-image" src="./img/grid_realizacje/9_grid.jpg" alt="">
+            <p class="image_text" id="image_text">
+              Technologie w ogrodzie: automatyzacja i wygoda 
+              Nowoczesne urządzenie ogrodu nie jest możliwe 
+              bez zastosowania najnowszych technologii. Automatyczne 
+              systemy nawadniania, inteligentne czujniki wilgotności, 
+              systemy kontroli oświetlenia - to wszystko sprawia, że opieka 
+              nad ogrodem staje się bardziej wygodna i efektywna. Za pomocą 
+              aplikacji mobilnych ogrodnicy mogą monitorować i zarządzać stanem 
+              swojego ogrodu nawet na odległość.
+            </p>
           </div>
-          <div class="grid_item">
-            <img class="grid_item-image" src="./img/grid_realizacje/2_grid.jpg" alt="">
-          </div>
-          <div class="grid_item">
+          <div class="grid_item" id="modal_image">
             <img class="grid_item-image" src="./img/grid_realizacje/1_grid.jpg" alt="">
+            <p class="image_text" id="image_text">
+              Technologie w ogrodzie: automatyzacja i wygoda 
+              Nowoczesne urządzenie ogrodu nie jest możliwe 
+              bez zastosowania najnowszych technologii. Automatyczne 
+              systemy nawadniania, inteligentne czujniki wilgotności, 
+              systemy kontroli oświetlenia - to wszystko sprawia, że opieka 
+              nad ogrodem staje się bardziej wygodna i efektywna. Za pomocą 
+              aplikacji mobilnych ogrodnicy mogą monitorować i zarządzać stanem 
+              swojego ogrodu nawet na odległość.
+            </p>
           </div>
-          <div class="grid_item">
+          <div class="grid_item" id="modal_image">
             <img class="grid_item-image" src="./img/grid_realizacje/2_grid.jpg" alt="">
+            <p class="image_text" id="image_text">
+              Technologie w ogrodzie: automatyzacja i wygoda 
+              Nowoczesne urządzenie ogrodu nie jest możliwe 
+              bez zastosowania najnowszych technologii. Automatyczne 
+              systemy nawadniania, inteligentne czujniki wilgotności, 
+              systemy kontroli oświetlenia - to wszystko sprawia, że opieka 
+              nad ogrodem staje się bardziej wygodna i efektywna. Za pomocą 
+              aplikacji mobilnych ogrodnicy mogą monitorować i zarządzać stanem 
+              swojego ogrodu nawet na odległość.
+            </p>
           </div>
-          <div class="grid_item">
-            <img class="grid_item-image" src="./img/grid_realizacje/3_grid.jpg" alt="">
-          </div>
-          <div class="grid_item">
-            <img class="grid_item-image" src="./img/grid_realizacje/4_grid.jpg" alt="">
-          </div>
-          <div class="grid_item">
-            <img class="grid_item-image" src="./img/grid_realizacje/5_grid.jpg" alt="">
-          </div>
-          <div class="grid_item">
-            <img class="grid_item-image" src="./img/grid_realizacje/6_grid.jpg" alt="">
-          </div>
-          <div class="grid_item">
+          <div class="grid_item" id="modal_image">
             <img class="grid_item-image" src="./img/grid_realizacje/7_grid.jpg" alt="">
+            <p class="image_text" id="image_text">
+              Technologie w ogrodzie: automatyzacja i wygoda 
+              Nowoczesne urządzenie ogrodu nie jest możliwe 
+              bez zastosowania najnowszych technologii. Automatyczne 
+              systemy nawadniania, inteligentne czujniki wilgotności, 
+              systemy kontroli oświetlenia - to wszystko sprawia, że opieka 
+              nad ogrodem staje się bardziej wygodna i efektywna. Za pomocą 
+              aplikacji mobilnych ogrodnicy mogą monitorować i zarządzać stanem 
+              swojego ogrodu nawet na odległość.
+            </p>
           </div>
-          <div class="grid_item">
+          <div class="grid_item" id="modal_image">
             <img class="grid_item-image" src="./img/grid_realizacje/8_grid.jpg" alt="">
+            <p class="image_text" id="image_text">
+              Technologie w ogrodzie: automatyzacja i wygoda 
+              Nowoczesne urządzenie ogrodu nie jest możliwe 
+              bez zastosowania najnowszych technologii. Automatyczne 
+              systemy nawadniania, inteligentne czujniki wilgotności, 
+              systemy kontroli oświetlenia - to wszystko sprawia, że opieka 
+              nad ogrodem staje się bardziej wygodna i efektywna. Za pomocą 
+              aplikacji mobilnych ogrodnicy mogą monitorować i zarządzać stanem 
+              swojego ogrodu nawet na odległość.
+            </p>
           </div>
-          <div class="grid_item">
+          <div class="grid_item" id="modal_image">
             <img class="grid_item-image" src="./img/grid_realizacje/9_grid.jpg" alt="">
+            <p class="image_text" id="image_text">
+              Technologie w ogrodzie: automatyzacja i wygoda 
+              Nowoczesne urządzenie ogrodu nie jest możliwe 
+              bez zastosowania najnowszych technologii. Automatyczne 
+              systemy nawadniania, inteligentne czujniki wilgotności, 
+              systemy kontroli oświetlenia - to wszystko sprawia, że opieka 
+              nad ogrodem staje się bardziej wygodna i efektywna. Za pomocą 
+              aplikacji mobilnych ogrodnicy mogą monitorować i zarządzać stanem 
+              swojego ogrodu nawet na odległość.
+            </p>
           </div>
-          <div class="grid_item">
+          <div class="grid_item" id="modal_image">
+            <img class="grid_item-image" src="./img/grid_realizacje/1_grid.jpg" alt="">
+            <p class="image_text" id="image_text">
+              Technologie w ogrodzie: automatyzacja i wygoda 
+              Nowoczesne urządzenie ogrodu nie jest możliwe 
+              bez zastosowania najnowszych technologii. Automatyczne 
+              systemy nawadniania, inteligentne czujniki wilgotności, 
+              systemy kontroli oświetlenia - to wszystko sprawia, że opieka 
+              nad ogrodem staje się bardziej wygodna i efektywna. Za pomocą 
+              aplikacji mobilnych ogrodnicy mogą monitorować i zarządzać stanem 
+              swojego ogrodu nawet na odległość.
+            </p>
+          </div>
+          <div class="grid_item" id="modal_image">
             <img class="grid_item-image" src="./img/grid_realizacje/2_grid.jpg" alt="">
+            <p class="image_text" id="image_text">
+              Technologie w ogrodzie: automatyzacja i wygoda 
+              Nowoczesne urządzenie ogrodu nie jest możliwe 
+              bez zastosowania najnowszych technologii. Automatyczne 
+              systemy nawadniania, inteligentne czujniki wilgotności, 
+              systemy kontroli oświetlenia - to wszystko sprawia, że opieka 
+              nad ogrodem staje się bardziej wygodna i efektywna. Za pomocą 
+              aplikacji mobilnych ogrodnicy mogą monitorować i zarządzać stanem 
+              swojego ogrodu nawet na odległość.
+            </p>
+          </div>
+          <div class="grid_item" id="modal_image">
+            <img class="grid_item-image" src="./img/grid_realizacje/7_grid.jpg" alt="">
+            <p class="image_text" id="image_text">
+              Technologie w ogrodzie: automatyzacja i wygoda 
+              Nowoczesne urządzenie ogrodu nie jest możliwe 
+              bez zastosowania najnowszych technologii. Automatyczne 
+              systemy nawadniania, inteligentne czujniki wilgotności, 
+              systemy kontroli oświetlenia - to wszystko sprawia, że opieka 
+              nad ogrodem staje się bardziej wygodna i efektywna. Za pomocą 
+              aplikacji mobilnych ogrodnicy mogą monitorować i zarządzać stanem 
+              swojego ogrodu nawet na odległość.
+            </p>
+          </div>
+          <div class="grid_item" id="modal_image">
+            <img class="grid_item-image" src="./img/grid_realizacje/8_grid.jpg" alt="">
+            <p class="image_text" id="image_text">
+              Technologie w ogrodzie: automatyzacja i wygoda 
+              Nowoczesne urządzenie ogrodu nie jest możliwe 
+              bez zastosowania najnowszych technologii. Automatyczne 
+              systemy nawadniania, inteligentne czujniki wilgotności, 
+              systemy kontroli oświetlenia - to wszystko sprawia, że opieka 
+              nad ogrodem staje się bardziej wygodna i efektywna. Za pomocą 
+              aplikacji mobilnych ogrodnicy mogą monitorować i zarządzać stanem 
+              swojego ogrodu nawet na odległość.
+            </p>
+          </div>
+          <div class="grid_item" id="modal_image">
+            <img class="grid_item-image" src="./img/grid_realizacje/9_grid.jpg" alt="">
+            <p class="image_text" id="image_text">
+              Technologie w ogrodzie: automatyzacja i wygoda 
+              Nowoczesne urządzenie ogrodu nie jest możliwe 
+              bez zastosowania najnowszych technologii. Automatyczne 
+              systemy nawadniania, inteligentne czujniki wilgotności, 
+              systemy kontroli oświetlenia - to wszystko sprawia, że opieka 
+              nad ogrodem staje się bardziej wygodna i efektywna. Za pomocą 
+              aplikacji mobilnych ogrodnicy mogą monitorować i zarządzać stanem 
+              swojego ogrodu nawet na odległość.
+            </p>
+          </div>
+          <div class="grid_item" id="modal_image">
+            <img class="grid_item-image" src="./img/grid_realizacje/1_grid.jpg" alt="">
+            <p class="image_text" id="image_text">
+              Technologie w ogrodzie: automatyzacja i wygoda 
+              Nowoczesne urządzenie ogrodu nie jest możliwe 
+              bez zastosowania najnowszych technologii. Automatyczne 
+              systemy nawadniania, inteligentne czujniki wilgotności, 
+              systemy kontroli oświetlenia - to wszystko sprawia, że opieka 
+              nad ogrodem staje się bardziej wygodna i efektywna. Za pomocą 
+              aplikacji mobilnych ogrodnicy mogą monitorować i zarządzać stanem 
+              swojego ogrodu nawet na odległość.
+            </p>
+          </div>
+          <div class="grid_item" id="modal_image">
+            <img class="grid_item-image" src="./img/grid_realizacje/2_grid.jpg" alt="">
+            <p class="image_text" id="image_text">
+              Technologie w ogrodzie: automatyzacja i wygoda 
+              Nowoczesne urządzenie ogrodu nie jest możliwe 
+              bez zastosowania najnowszych technologii. Automatyczne 
+              systemy nawadniania, inteligentne czujniki wilgotności, 
+              systemy kontroli oświetlenia - to wszystko sprawia, że opieka 
+              nad ogrodem staje się bardziej wygodna i efektywna. Za pomocą 
+              aplikacji mobilnych ogrodnicy mogą monitorować i zarządzać stanem 
+              swojego ogrodu nawet na odległość.
+            </p>
           </div>
         </div>   
         <div class="open_grid" id="open_grid">
@@ -299,6 +511,12 @@
             &darr;
           </span>
         </div>   
+      </div>
+      <div class="modal_block" id="modal_block">
+        <span class="close_button" id="close_button">&times;</span>
+        <img class="modal_content" id="modal_content" src="">
+        <div class="modal_text" id="modal_text">
+        </div>
       </div>
     </section>
 
@@ -311,14 +529,14 @@
         </div>
         <div class="inst_subtitle">
           <p>Śledź nasze</br> najnowsze realizacje!</p>
-          <a href="!#">Instagram</a>
+          <a href="#!">Instagram</a>
         </div>
       </div>
     </section>
 
 
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="footer_block-1">
         <div class="footer_title">
           <p>
@@ -337,10 +555,10 @@
       <div class="footer_stick"></div>
       <div class="footer_block-2">
         <div class="footer_link">
-          <a href="">Kontakt</a>
-          <a href="">Instagram</a>
-          <a href="">Facebook</a>
-          <a href="">LinkedIn</a>
+          <a href="#!">Kontakt</a>
+          <a href="#!">Instagram</a>
+          <a href="#!">Facebook</a>
+          <a href="#!">LinkedIn</a>
         </div>
         <div class="footer_kontakt">
           <a href="tel:+000-000-000">000-000-000</a>
@@ -355,7 +573,8 @@
         </div>
       </div>
     </footer>
-
+    <div class="darkness" id="darkness">
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="./node_modules/masonry-layout/dist/masonry.pkgd.min.js"></script>
     <script src="./js/masonry.js"></script>
